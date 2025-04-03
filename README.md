@@ -1,5 +1,9 @@
 # Magic: The Gathering Vector Search Engine
 A magic the gathering card search tool that uses samntic similarity rather than just keywords. Easier to you for new players like myself when trying to build a deck!  
+
+Instead of searching for exact keywords, you search for semantic similarity by comparing the vectors of your query with the vectors in the database  
+Data (like text from Magic cards) is transformed into these vectors using a process involving tokenization (splitting text into smaller units) and embedding (converting tokens into numerical representations using pre-trained models)  
+When you query, the same vectorization process is applied to your query, and the resulting query vector is compared to the vectors in the database to find the most similar ones.    
 Technologies used will include Weaviate(built in AI and machine learning integration), OpenAI, python, node.js and next.js  
 *
 Prerequisites: List any necessary software (e.g., Node.js, Python, Docker (if using local Weaviate)).  
